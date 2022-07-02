@@ -9,6 +9,12 @@
 
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     color: #757575;
     font-family: 'Roboto', Helvetica;        
@@ -19,6 +25,8 @@ body {
         
 }
 
+
+
 /* убирает подчеркивание */
 a {
     text-decoration: none;
@@ -27,14 +35,26 @@ a {
     /* color: #757575; */
 }
 
+h1{
+    margin-top: 0;
+        margin-bottom: 0;
+}
+
 h2 {
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 p{
     margin-bottom: 0;
 }
 
+ul{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ 
 .current{
     color: var(--acent-text-color);
 }
@@ -55,9 +75,13 @@ p{
 
 .link{
 /* color: var(--primary-text-color); */
+       margin-top: 0px;
+       margin-bottom: 0px;
+
         font-weight: 500;
         line-height: 1.14;
         letter-spacing: 0.02em;
+
 }
 
 .link-style {
@@ -112,7 +136,8 @@ ul {
 }
 
 .hero {
-
+ margin-top: 0px;
+ margin-bottom: 0px;
 
     color: #FFFFFF;
     text-align: center;
