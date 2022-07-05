@@ -55,19 +55,26 @@ ul{
 }
 
 .box{
-    outline: 3px solid tomato;
+   padding-left: 15px;
+   padding-right: 15px;
+
 width: 1170px;
 margin-left: auto;
 margin-right: auto;
 /* text-align: center; */
 }
 
- 
+ .header{
+    outline: 3px solid tomato;
+ }
+
 .current{
     color: var(--acent-text-color);
 }
 
 .logo{
+    display: block;
+    display: flex;
     font-weight: var(--secendary-weight-font);
         font-size: 26px;
         line-height: 31px;
@@ -112,8 +119,9 @@ ul {
        } */
 
 
-/* heder */
+/* header */
 .logo {
+    align-items: center;
     color: var(--secondary-white-color);
     font-family: 'Raleway',  sans-serif;
     color: #000000;
@@ -124,9 +132,61 @@ ul {
     font-weight: var(--secendary-weight-font);
 }
 
-.site-naw {
-    color: var(--primary-text-color);
+.navigation {
+    display: flex;
+    align-items: center;
 }
+
+.site-naw {
+display: flex;
+
+    color: var(--primary-text-color);
+    margin-left: 93px;
+}
+
+.main-naw{
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+    
+
+}
+
+.site-naw .link{
+    display: block;
+}
+ 
+.site-naw .item{
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.site-naw .item+.item {
+    margin-left: 40px;
+}
+
+.auth-naw{
+    display: flex;
+    margin-left: auto;
+}
+
+.auth-naw .item + .item{
+    margin-left: 50px;
+    
+}
+
+.auth-naw .item{
+    display: block;
+  
+
+}
+
+/*  современный способ  .site-naw .item:not(:last-child){
+    margin-right: 40px;
+}  */
+
+
 
 .link:hover,
 .link:focus {
