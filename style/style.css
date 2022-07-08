@@ -5,15 +5,16 @@
     --primary-weight-font: 400;
     --secendary-weight-font: 700;
     --background-color-button: #F5F4FA;
+    
 
 
 }
 
-*,
+/* *,
 *::before,
 *::after {
     box-sizing: border-box;
-}
+} */
 
 body {
     color: #757575;
@@ -142,6 +143,7 @@ display: flex;
 
     color: var(--primary-text-color);
     margin-left: 93px;
+    padding-left: 0;
 }
 
 .main-naw{
@@ -169,6 +171,7 @@ display: flex;
 .auth-naw{
     display: flex;
     margin-left: auto;
+    padding-left: 0;
 }
 
 .auth-naw .item + .item{
@@ -239,64 +242,16 @@ display: flex;
 
 }
 
-
-
-/* блок команда */
-
-/* .cart {
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    width: 270px;
-} */
-
-.title-team{
-    font-weight: 500;
-        font-size: 16px;
-        line-height: 1.2;
-        color: var(--primary-text-color);
-
-        padding-bottom: 10px;
-
-}
-.text-team {
-    font-size: 16px;
-        line-height: 1.2;
-
-        /* padding-bottom: 30px; */
-}
-
-.section-style{
-    background: #E5E5E5;
-    
-}
-/* .text-box{
-    padding-bottom: 30px ;
-    padding-top: 30px;
-    padding-right: 60px;
-    padding-left: 60px;
-} */
-/* .our-team {
-    padding-bottom: 50px;
-}
-
-.box-our-team {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
-.photo {
-    padding-bottom: 30px;
-} */
-
-
-
 /* особености */
-/* класи всем секциям */
 .section-title {
     color: var(--primary-text-color);
     font-weight: var(--secendary-weight-font);
         font-size: 36px;
         line-height: 1.2;
+
+        text-align: center;
+        padding-top: 94px;
+        padding-bottom: 50px;
         
 }
 
@@ -304,6 +259,8 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0p
   background: #F5F4FA;;
 }
 /* Особености */
+
+
 .title {
     color: var(--primary-text-color);
     font-weight: var(--secendary-weight-font);
@@ -315,12 +272,97 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0p
 
 .trait{
     padding-bottom: 94px;
-    padding-top: 94px;
+    padding-left: 0;
+
+    display: flex;
+    
+}
+
+.features{
+    padding-bottom: 94px;
+    text-align: center;
+}
+
+.item{
+    box-sizing: border-box;
+margin-right: 30px;
+}
+
+.item:nth-child(4n) {
+    margin-right: 0;
+
+}
+
+/*  чем мы занимаемся */
+.item-ph{
+    margin-right: 30px;
+}
+
+.item-ph:nth-child(3n){
+    margin-right: 0;
 }
 /* Блок команда */
 
+.photo{
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.title-team {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--primary-text-color);
+    text-align: center;
 
 
+    margin-top: 0;
+    margin-bottom: 16px;
+
+outline: 1px solid tomato;
+}
+
+.text-team {
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+
+    margin-top: 0;
+
+    outline: 1px solid tomato;
+    /* padding-bottom: 30px; */
+}
+
+.section-style {
+    background: #FFFFFF;
+
+}
+
+.cart{
+    background: #FFFFFF;
+
+    margin-right: 30px;
+    overflow: hidden;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+}
+
+.cart:nth-child(4n){
+    margin-right: 0;
+}
+
+.text-box{
+    text-align: center;
+    min-width: 150px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 60px;
+    padding-left: 60px;
+
+    /* outline: 1px solid tomato; */
+    background-color: tomato;
+}
 /* footer */
 .footer {
     background-color:#2F303A;
@@ -332,15 +374,36 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0p
 } */
 
 
-
-.address {
-font-size: normal;
-
+.footer-box{
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
+
+.address {    
+font-size: normal;
+}
+
+.logo{
+    margin-bottom: 30px;
+}
+
+.list{
+    padding-left: 0;
+}
+
 a[href="https://goo.gl/maps/727tqZzBJjCVUAbq7"] {   
     color: #FFFFFF;
     font-style: 400;
     font-style: normal;
+}
+
+.footer-adrs{
+    padding-bottom: 10px;
+
+}
+
+.footer-adrs:nth-child(3n){
+    padding-bottom: 0%;
 }
 
 .footer-link {
