@@ -23,6 +23,8 @@ body {
         font-size: 14px;
         line-height: 1.7;
         letter-spacing: 0.03em;
+
+        border: 1px solid #000000;
         
 }
 
@@ -48,6 +50,7 @@ h2 {
 
 p{
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 ul{
@@ -71,13 +74,15 @@ margin-right: auto;
 /* text-align: center; */
 }
 
- /* .header{
-    outline: 3px solid tomato;
- } */
 
 .current{
     color: var(--acent-text-color);
 }
+
+.hidden{
+    visibility: hidden;
+}
+
 
 .logo{
     display: block;
@@ -126,7 +131,7 @@ ul {
        } */
 
 
-/* header */
+/* =========HEADER========== */
 .logo {
     align-items: center;
     color: var(--secondary-white-color);
@@ -191,11 +196,16 @@ display: flex;
 
 }
 
+.header{
+border: 1px solid #ECECEC;
+ }
+
+
 /*  современный способ  .site-naw .item:not(:last-child){
     margin-right: 40px;
 }  */
 
-
+/* =========  /HEADER  ========== */
 
 .link:hover,
 .link:focus {
@@ -206,6 +216,8 @@ display: flex;
 /* блок герой */
 .blok {
     background-color: #2F303A;
+    padding-top: 200px;
+    padding-bottom: 200px;
     /* width: 1600px;
         height: 600px; */
        
@@ -214,7 +226,6 @@ display: flex;
 .hero {
  margin-top: 0px;
  margin-bottom: 30px;
- padding-top: 200px;
 
     color: #FFFFFF;
     text-align: center;
@@ -250,11 +261,11 @@ display: flex;
 
 }
 
-.hero-box{
+/* .hero-box{
     padding-bottom: 200px;
-}
+} */
 
-/* особености */
+/* =======особености====== */
 .section-title {
     color: var(--primary-text-color);
     font-weight: var(--secendary-weight-font);
@@ -262,15 +273,17 @@ display: flex;
         line-height: 1.2;
 
         text-align: center;
-        padding-top: 94px;
+        /* padding-top: 94px; */
         padding-bottom: 50px;
         
 }
 
 .team{
   background: #F5F4FA;;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
-/* Особености */
+/* ======== ОСОБЕНОСТИ ======= */
 
 
 .title {
@@ -283,15 +296,17 @@ display: flex;
 }
 
 .trait{
-    padding-bottom: 94px;
-    padding-left: 0;
+    /* padding-bottom: 94px;
+    padding-left: 0; */
 
     display: flex;
     
 }
 
 .features{
-    padding-bottom: 94px;
+       padding-top: 0;
+    padding-bottom: 0;
+    
     text-align: center;
 }
 
@@ -305,7 +320,10 @@ margin-right: 30px;
 
 }
 
-/*  чем мы занимаемся */
+
+/* ======== /ОСОБЕНОСТИ ======= */
+
+/*  ========ЧЕМ МЫ ЗАНИМАЕМСЯ ======= */
 .item-ph{
     margin-right: 30px;
 }
@@ -313,6 +331,9 @@ margin-right: 30px;
 .item-ph:nth-child(3n){
     margin-right: 0;
 }
+
+/*  ======== / ЧЕМ МЫ ЗАНИМАЕМСЯ ======= */
+
 /* Блок команда */
 
 .photo{
@@ -327,7 +348,7 @@ margin-right: 30px;
     color: var(--primary-text-color);
     text-align: center;
 
-    margin-top: 30px;
+    margin-top: 0;
     margin-bottom: 10px;
 
     /* outline: 1px solid tomato; */
@@ -340,7 +361,7 @@ margin-right: 30px;
 
     text-align: center;
     margin-top: 0;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 
     /* outline: 1px solid tomato; */
     /* padding-bottom: 30px; */
@@ -348,7 +369,18 @@ margin-right: 30px;
 
 .section-style {
     background: #FFFFFF;
+    padding-top: 94px;
+    padding-bottom: 94px;
 
+}
+
+.padding-none {
+    padding-top: 0;
+}
+
+.cart-bottom{
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .cart{
@@ -372,14 +404,15 @@ margin-right: 30px;
     padding-bottom: 30px;
     padding-right: 60px;
     padding-left: 60px;
-
-    /* outline: 1px solid tomato; */
-    background-color: tomato;
-}
+ 
+} 
 /* ==========footer========== */
 .footer {
     background-color:#2F303A;
     font-style: normal;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 /* .active {
@@ -389,11 +422,6 @@ margin-right: 30px;
 
 .logo-margin-bottom{
     margin-bottom: 20px;
-}
-
-.footer-box{
-    padding-top: 60px;
-    padding-bottom: 60px;
 }
 
 .address {    
@@ -444,9 +472,11 @@ a[href="https://goo.gl/maps/727tqZzBJjCVUAbq7"] {
         letter-spacing: 0.06em;        
         text-align: inherit;
 
-        margin-left: 25px;
-        margin-top: 20px;
+        /* margin-left: 25px;
+        margin-top: 20px; */
         margin-bottom: 5px;
+        margin-top: 0;
+        margin-bottom: 0;
 
 }   
 
@@ -455,9 +485,17 @@ a[href="https://goo.gl/maps/727tqZzBJjCVUAbq7"] {
         line-height: 1.8;   
         text-align: inherit;
 
-        margin-right: 0px;
-        margin-left: 25px;
-        margin-bottom: 20px;
+        margin-top: 0;
+         /* margin-right: 0px; 
+         margin-left: 25px;
+        margin-bottom: 20px;  */
+    }
+
+.title-text-padding{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 24px;
+
 }
 
 .port-button{
@@ -470,6 +508,7 @@ font-weight: 500;
 
    color: var(--primary-text-color);
    background: var(--background-color-button);
+   border: none;
 
    min-width: 73px;
    height: 38px;
@@ -482,11 +521,19 @@ font-weight: 500;
     background-color: var(--acent-text-color);    
 }
 
-.button-list{
+.buttons-list{
     display: flex;
     justify-content: center;
 }
 
+.btn-list {
+    margin-right: 8px;
+}
+
+.btn-list:last-child{
+    margin-right: 0;
+
+}
 
 .card-img{
     width: 100%;
@@ -505,10 +552,10 @@ font-weight: 500;
     /* background-color: tomato; */
 }
 
-.card-galery .box-shadow {
+/* .card-galery .box-shadow {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     
-}
+} */
 
 .cards-galery:nth-child(3n){
 margin-right: 0;
