@@ -38,14 +38,9 @@ a {
     /* color: #757575; */
 }
 
-h1{
+h1,h2,h3,h4,h5{
     margin-top: 0;
         margin-bottom: 0;
-}
-
-h2 {
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
 p{
@@ -54,6 +49,8 @@ p{
 }
 
 ul{
+    padding: 0;
+    margin: 0;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -68,7 +65,7 @@ img {
    padding-left: 15px;
    padding-right: 15px;
 
-width: 1170px;
+width: 1200px;
 margin-left: auto;
 margin-right: auto;
 /* text-align: center; */
@@ -170,13 +167,13 @@ display: flex;
     display: block;
 }
  
-.site-naw .item{
-    padding-top: 32px;
-    padding-bottom: 32px;
+.site-naw .item:last-child{
+    margin-right: 0;
 }
 
-.site-naw .item+.item {
-    margin-left: 40px;
+.item .link{
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .auth-naw{
@@ -185,10 +182,15 @@ display: flex;
     padding-left: 0;
 }
 
-.auth-naw .item + .item{
+.auth-naw .item:last-child{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* .auth-naw .item + .item{
     margin-left: 50px;
     
-}
+} */
 
 .auth-naw .item{
     display: block;
@@ -197,7 +199,7 @@ display: flex;
 }
 
 .header{
-border: 1px solid #ECECEC;
+border-bottom: 1px solid #ECECEC;
  }
 
 
@@ -205,6 +207,8 @@ border: 1px solid #ECECEC;
     margin-right: 40px;
 }  */
 
+
+/* ============================== */
 /* =========  /HEADER  ========== */
 
 .link:hover,
@@ -273,8 +277,7 @@ border: 1px solid #ECECEC;
         line-height: 1.2;
 
         text-align: center;
-        /* padding-top: 94px; */
-        padding-bottom: 50px;
+        margin-bottom: 50px;
         
 }
 
@@ -312,7 +315,7 @@ border: 1px solid #ECECEC;
 
 .item{
     box-sizing: border-box;
-margin-right: 30px;
+    margin-right: 30px;
 }
 
 .item:nth-child(4n) {
@@ -332,6 +335,9 @@ margin-right: 30px;
     margin-right: 0;
 }
 
+.item-size{
+    max-width: 270px;
+}
 /*  ======== / ЧЕМ МЫ ЗАНИМАЕМСЯ ======= */
 
 /* Блок команда */
@@ -369,13 +375,13 @@ margin-right: 30px;
 
 .section-style {
     background: #FFFFFF;
-    padding-top: 94px;
+    /* padding-top: 94px; */
     padding-bottom: 94px;
 
 }
 
 .padding-none {
-    padding-top: 0;
+    padding-top: 94px;
 }
 
 .cart-bottom{
@@ -439,7 +445,7 @@ a[href="https://goo.gl/maps/727tqZzBJjCVUAbq7"] {
 }
 
 .footer-adrs{
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 
 }
 
@@ -452,12 +458,20 @@ a[href="https://goo.gl/maps/727tqZzBJjCVUAbq7"] {
     color: #ffffff99;
 }
 
+.list .footer-adrs:last-child{
+    margin-bottom: 0;
+}
+
 /*======= portfolio========= */
 
 /* =========ELEMENT========= */
 
 .container-port{
-    margin-bottom: 95px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin-right: auto;
+    margin-left: auto;
+
 }
 
 /* =========/ELEMENT======== */
@@ -492,9 +506,10 @@ a[href="https://goo.gl/maps/727tqZzBJjCVUAbq7"] {
     }
 
 .title-text-padding{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
 
 }
 
@@ -524,6 +539,8 @@ font-weight: 500;
 .buttons-list{
     display: flex;
     justify-content: center;
+
+    margin-bottom: 50px;
 }
 
 .btn-list {
